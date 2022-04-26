@@ -1,5 +1,15 @@
 h1 {
-  color: red;
+  color: rgb(250, 0, 0);
+}
+@media screen and (min-width: 799px) {
+  h1 {
+    color: green;
+  }
+}
+@media screen and (min-width: 799px) and (min-width: 991px) {
+  h1 {
+    color: violet;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
