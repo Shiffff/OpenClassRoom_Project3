@@ -13,3 +13,7 @@
     @content;
     }
 }
+@mixin fastflexbox {
+    display: flex;
+    justify-content: center;
+}

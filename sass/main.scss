@@ -1,13 +1,6 @@
 @import "./utils/variable";
 @import "./utils/mixins";
 @import "./utils/map";
+@import "./base/global";
+@import "./layout/blocs";
 
-h1{
-    color: rgb(250, 0, 0);
-    @include tablette-only{
-        color: green;
-    @include desktop-only{
-        color: violet;
-    }
-    }
-}

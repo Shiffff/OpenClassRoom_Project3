@@ -1,0 +1,48 @@
+header{
+    @include fastflexbox;
+    margin: -10px;
+    color: rgb(34, 34, 34);
+}
+h3{
+    gap: 15px;
+    @include fastflexbox;
+    color: rgb(77, 73, 73);
+    background-color: rgb(234, 234, 234);
+    margin: 0;
+    padding: 15px;
+    font-size: 16px;
+    font-weight: 900;
+    box-shadow: inset rgba(0, 0, 0, 0.275) 0px 10px 13px -10px;
+    @include tablette-only{
+        color: green;
+    @include desktop-only{
+        color: violet;
+    }
+    }
+}
+.bloc1{
+    @include fastflexbox;
+    flex-wrap: wrap;
+    background-color: rgb(251, 246, 246);
+    padding-bottom: 45px;
+    h2{
+        width: 70%;
+        text-align: center;
+    }
+    p{
+        width: 100%;
+        text-align: center;
+        font-weight: 300;
+    }
+    .bloc1__btn{
+        font-weight: 400;
+        width: 190px;
+        height: 45px;
+        border-radius: 40px;
+        background: linear-gradient(160deg, rgba(244,138,255,1) 0%, rgba(158,88,255,1) 99%);
+        color: #fff;
+        border: none;
+        box-shadow:rgba(0, 0, 0, 0.375) 0px 12px 13px -9px;
+        font-family: 'Roboto';
+    }
+}
