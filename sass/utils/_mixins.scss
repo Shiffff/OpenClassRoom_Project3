@@ -17,3 +17,10 @@
     display: flex;
     justify-content: center;
 }
+@mixin boxshadowbutton {
+    box-shadow:rgba(0, 0, 0, 0.375) 0px 12px 13px -9px;
+}
+@mixin fastgrid {
+    display: grid;
+    justify-content: center;
+}
