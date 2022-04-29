@@ -98,9 +98,48 @@ h3{
         padding-top: 6px;
     }
 }
-    img{
+
+.bloc3{
+    background-color: rgb(251, 246, 246);   
+         
+    .bloc3__btn{ 
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+    h2{
+        padding: 50px 0 8px 28px;
+    }
+    .bloc3__btn__1
+    {
+        background-color: rgb(255, 255, 255);
         width: 92%;
+        @include boxshadowbutton;
+        border-radius: 15px;
+        flex-wrap: wrap;
+       
+        h4{
+           margin: 7px 0 0 10px;
+           font-size: 15px;
+           font-weight: 600;
+        }
+        p{
+            margin: 5px 0 12px 10px;
+            font-weight: 300;
+            font-size: 14px;
+        }
+    }
+}
+
+
+
+
+
+
+
+    img{
+        width: 100%;
         height: 130px;
         border-radius: 15px 15px 0 0;
     }
-
