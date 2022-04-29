@@ -1,0 +1,75 @@
+.bloc3{
+    background-color: rgb(251, 246, 246);   
+    @include desktop-only{
+        align-items: center;
+        align-content: center;
+        justify-content: center;
+        justify-items: center;
+        display: flex;
+        flex-direction: column;
+    }
+         
+    .bloc3__btn{ 
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+        padding-bottom: 50px;
+        @include desktop-only{
+            display: flex;
+            flex-direction: initial;
+            flex-wrap: wrap;
+            gap:20px;
+            min-width: 950px;
+        }    
+    }
+    h2{
+        padding: 50px 0 8px 28px;
+        @include desktop-only{
+            padding-right: 40px;
+        }
+    }
+    .bloc3__btn__1
+    {
+        background-color: rgb(255, 255, 255);
+        width: 92%;
+        @include boxshadowbutton;
+        border-radius: 15px;
+        flex-wrap: wrap;
+        position: relative;
+        @include desktop-only{
+            max-width: 450px;
+        }
+        img{
+            width: 100%;
+            height: 130px;
+            border-radius: 15px 15px 0 0;
+        }
+        .writenew{
+            position: absolute;
+            right: 10px;
+            top: 10px;
+            background-color: #99e2d0;
+            color: #148e72;
+            font-size: 11px;
+            padding: 4px 7px 4px 7px;
+            font-weight: 500;
+        }
+        .fa-regular{
+            position: absolute;
+            right: 15px;
+            bottom: 24px;
+            font-size: 18px;
+        }
+        h4{
+           margin: 7px 0 0 10px;
+           font-size: 15px;
+           font-weight: 600;
+        }
+        p{
+            margin: 5px 0 12px 10px;
+            font-weight: 300;
+            font-size: 14px;
+        }
+    }
+}

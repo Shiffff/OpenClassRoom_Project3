@@ -1,0 +1,31 @@
+footer{
+    background-color: rgb(83, 81, 81);
+    margin: 0px;
+    padding: 0px;
+    @include desktop-only{
+
+    }
+    h1{
+        font-size: 17px;
+        color: white;
+        padding: 15px 0 10px 35px;
+        font-weight: 500;
+        @include desktop-only{
+            text-align: center;
+            }
+        }
+    p{
+        margin: 0;
+        padding: 0 0 10px 35px;
+        color: white;
+        font-size: 14px;
+        @include desktop-only{
+        text-align: center;
+        }
+
+    }
+    i{
+        margin-right: 10px;
+        font-size: 10px;
+    }
+}

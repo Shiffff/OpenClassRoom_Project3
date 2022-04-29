@@ -16,3 +16,20 @@
 
         }
 }
+h3{
+    gap: 15px;
+    @include fastflexbox;
+    color: rgb(77, 73, 73);
+    background-color: rgb(234, 234, 234);
+    margin: 0;
+    padding: 15px;
+    font-size: 16px;
+    font-weight: 900;
+    box-shadow: inset rgba(0, 0, 0, 0.275) 0px 10px 13px -10px;
+    @include tablette-only{
+        color: green;
+    @include desktop-only{
+        color: violet;
+    }
+    }
+}
