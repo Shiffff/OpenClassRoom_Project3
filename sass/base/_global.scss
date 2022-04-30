@@ -14,3 +14,10 @@ img
 {
     object-fit:cover /* gere la facon de gerer les images  */
 }
+a{
+    text-decoration: none;
+    &:visited{
+        text-decoration: none;
+        color: #0000;
+    }
+}

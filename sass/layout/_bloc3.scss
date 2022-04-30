@@ -21,6 +21,7 @@
             flex-wrap: wrap;
             gap:20px;
             min-width: 950px;
+            
         }    
     }
     h2{
@@ -40,6 +41,12 @@
         @include desktop-only{
             max-width: 450px;
         }
+        &:hover{
+                transform: scale(1.02);
+                cursor: pointer;
+                transition: transform 150ms;
+                box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+        }
         img{
             width: 100%;
             height: 130px;
@@ -55,21 +62,51 @@
             padding: 4px 7px 4px 7px;
             font-weight: 500;
         }
-        .fa-regular{
-            position: absolute;
-            right: 15px;
-            bottom: 24px;
-            font-size: 18px;
-        }
         h4{
            margin: 7px 0 0 10px;
            font-size: 15px;
            font-weight: 600;
+           color: black;
+           width: 50%;
         }
         p{
             margin: 5px 0 12px 10px;
             font-weight: 300;
             font-size: 14px;
+            color: black;
+            width: 50%;
         }
+        i{
+            position: absolute;
+            right: 15px;
+            bottom: 24px;
+            font-size: 24px;
+            
+        }
+        .fa-regular{
+            color: black;
+        }
+        .full
+        {
+            font-weight: 900;
+            color: transparent;
+            &:hover{
+                -webkit-background-clip: text;
+                background-clip: text;    
+                background-image: linear-gradient($primary-color, $secondary-color);
+                animation-name: heart;
+                animation-duration: 200ms;
+                transform-origin: bottom;
+                transform: scale(1.1);
+            }
+        }
+    }
+}
+@keyframes heart{
+    0%{
+    transform: scale(0);
+    }
+    100%{
+        transform: scale(1.1);
     }
 }

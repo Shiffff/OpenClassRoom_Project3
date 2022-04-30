@@ -13,7 +13,8 @@
             cursor: pointer;
             transform: scale(1.03);
             transition: transform 100ms;
-
+            opacity: 0.9;
+            box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
         }
 }
 h3{
@@ -26,10 +27,4 @@ h3{
     font-size: 16px;
     font-weight: 900;
     box-shadow: inset rgba(0, 0, 0, 0.275) 0px 10px 13px -10px;
-    @include tablette-only{
-        color: green;
-    @include desktop-only{
-        color: violet;
-    }
-    }
 }

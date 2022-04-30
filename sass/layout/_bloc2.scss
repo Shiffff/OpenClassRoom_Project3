@@ -4,6 +4,10 @@
     @include fastflexbox;
     padding-right: 40px
     }
+    @include tablette-only{
+        @include fastflexbox;
+        padding-right: 40px
+        }
 }
 .bloc2__btn
 {
@@ -29,8 +33,9 @@
         &:hover{
             cursor: pointer;
             background-color: lighten($primary-color, 36%);
+            box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
             i:before{
-                color: $primary-color;
+            color: $primary-color;
             }
         }
         .fa-solid{

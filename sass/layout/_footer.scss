@@ -19,10 +19,16 @@ footer{
         padding: 0 0 10px 35px;
         color: white;
         font-size: 14px;
+        &:hover{
+            text-decoration: underline;
+            cursor: pointer;
+        }
+        a{
+            color:white;
+        }
         @include desktop-only{
         text-align: center;
         }
-
     }
     i{
         margin-right: 10px;
