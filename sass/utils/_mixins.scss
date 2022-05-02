@@ -24,3 +24,8 @@
     display: grid;
     justify-content: center;
 }
+@mixin overflow{
+    white-space: nowrap;
+    text-overflow:ellipsis;
+    overflow: hidden;
+}

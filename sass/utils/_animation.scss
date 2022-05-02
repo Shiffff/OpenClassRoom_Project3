@@ -13,3 +13,13 @@
     
     0%{transform:translateY(30px);opacity:0}
     100%{transform:translateY(0);opacity:1}}
+
+@keyframes rotate-center {
+    0% {
+      transform: rotate(180deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+  
