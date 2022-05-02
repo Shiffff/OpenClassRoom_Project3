@@ -2,11 +2,14 @@ header{
     @include fastflexbox;
     color: rgb(34, 34, 34);
     position: relative;
+    h1{
+        margin: 11px;
+    }
     i{
         font-size: 20px;
         position: absolute ;
         left: 25px;
-        top: 33px;
+        top: 24px;
         cursor: pointer;
     }
 }

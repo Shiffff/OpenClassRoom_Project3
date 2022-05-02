@@ -1,5 +1,5 @@
 .bloc3{
-    background-color: rgb(251, 246, 246);   
+    background-color: rgb(246, 246, 246);   
     @include desktop-only{
         align-items: center;
         align-content: center;
@@ -89,6 +89,7 @@
         }
         .fa-regular{
             color: black;
+            
         }
         .full
         {

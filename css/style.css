@@ -14,6 +14,7 @@ body {
 
 img {
   object-fit: cover;
+  /* gere la facon de gerer les images  */
 }
 
 a {
@@ -61,7 +62,7 @@ h3 {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
-  background-color: rgb(251, 246, 246);
+  background-color: rgb(246, 246, 246);
   padding-bottom: 50px;
 }
 .bloc1 h2 {
@@ -99,7 +100,7 @@ h3 {
 .bloc2__btn {
   display: grid;
   justify-content: center;
-  grid-template-columns: 92%;
+  grid-template-columns: 85%;
   gap: 25px;
 }
 @media screen and (min-width: 991px) {
@@ -112,7 +113,7 @@ h3 {
   box-shadow: rgba(0, 0, 0, 0.2) 0px 12px 13px -9px;
   display: flex;
   justify-content: center;
-  background-color: rgb(251, 246, 246);
+  background-color: rgb(246, 246, 246);
   border-radius: 17px;
   height: 65px;
   position: relative;
@@ -154,7 +155,7 @@ h3 {
 }
 
 .bloc3 {
-  background-color: rgb(251, 246, 246);
+  background-color: rgb(246, 246, 246);
 }
 @media screen and (min-width: 991px) {
   .bloc3 {
@@ -352,6 +353,7 @@ h3 {
 .menu .menu__middle p {
   padding: 5px 0 12px 15px;
   margin: 0;
+  font-size: 14px;
 }
 .menu .menu__middle strong {
   padding: 8px 20px 0 0;
@@ -391,11 +393,14 @@ header {
   color: rgb(34, 34, 34);
   position: relative;
 }
+header h1 {
+  margin: 11px;
+}
 header i {
   font-size: 20px;
   position: absolute;
   left: 25px;
-  top: 33px;
+  top: 24px;
   cursor: pointer;
 }
 
@@ -405,7 +410,7 @@ header i {
 }
 
 footer {
-  background-color: rgb(83, 81, 81);
+  background-color: rgb(53, 53, 53);
   margin: 0px;
   padding: 0px;
 }

@@ -12,7 +12,7 @@
 .bloc2__btn
 {
     @include fastgrid;
-    grid-template-columns: 92%;
+    grid-template-columns: 85%;
     gap: 25px;
     @include desktop-only{
         display: flex;
@@ -22,7 +22,7 @@
     .bloc2__btn__1{
         @include boxshadowbutton;
         @include fastflexbox;
-        background-color: rgb(251, 246, 246);
+        background-color: rgb(246, 246, 246);
         border-radius: 17px;
         height: 65px;
         position: relative;
