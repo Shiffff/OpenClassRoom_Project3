@@ -8,7 +8,6 @@
         display: flex;
         flex-direction: column;
     }
-         
     .bloc3__btn{ 
         display: flex;
         flex-direction: column;
@@ -28,6 +27,12 @@
         @include desktop-only{
             padding-right: 40px;
         }
+        @include tablette-only{
+            @include fastflexbox;
+            padding-right: 40px;
+
+        }
+
     }
     .bloc3__btn__1
     {

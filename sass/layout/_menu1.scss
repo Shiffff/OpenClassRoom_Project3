@@ -1,0 +1,102 @@
+  .menu i{
+        position: absolute;
+        right: 30px;
+        font-size: 27px;
+        top: 40px
+    }
+    .fa-regular{
+        color: black;
+        z-index: 1;
+    }
+    .full
+    {
+        z-index: 2;
+        font-weight: 900;
+        color: transparent;
+        &:hover{
+            -webkit-background-clip: text;
+            background-clip: text;    
+            background-image: linear-gradient($primary-color, $secondary-color);
+            animation-name: heart;
+            animation-duration: 200ms;
+            transform-origin: bottom;
+            transform: scale(1.15);
+        }
+    }
+    .imgheader img{
+        width: 100%;
+        height: 250px;
+    }
+.menu{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin-top: -50px;
+    .menu__middle{
+        min-width: 340px;
+        position: relative;
+        width: 100%;
+        background: $backgrey;
+        border-radius: 40px 40px 0 0;
+        @include desktop-only{
+            width: 60%;
+            min-width: 950px;
+        }
+        h1{
+            font-size: 27px;
+            font-weight: 500;
+            padding-left: 20px;
+            padding-top: 10px;
+        }
+        h6{
+            text-transform: uppercase;
+            font-size: 15px;
+            font-weight: 300;
+            padding-bottom: 5px;
+            border-bottom: 1px solid $third-;
+            border-width: 3px;
+            width: 40px;
+            margin-left: 20px;
+            margin-bottom: 18px;
+        }
+        h5{
+            font-size: 17px;
+            margin: 0;
+            padding: 15px 0 0 15px;
+        }
+        p{
+            padding: 5px 0 12px 15px;
+            margin: 0;
+        }
+        strong{
+            padding: 8px 20px 0 0;
+        }
+        button{
+            margin: 40px;
+        }
+    }
+}
+.menu__name{
+    background-color: #fff;
+    border-radius: 20px;
+    width: 95%;
+    @include boxshadowbutton;
+    &:hover{
+        cursor: pointer;
+        transform: scale(1.03);
+        transition: transform 100ms;
+        opacity: 0.9;
+        box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+    }
+    .price{
+        display: flex;
+        justify-content: space-between;
+
+    }
+}
+.menu__entree{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 13px;
+}
