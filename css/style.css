@@ -132,7 +132,7 @@ h3 {
   color: #9356DC;
 }
 .bloc2__btn .bloc2__btn__1 .fa-solid {
-  padding-right: 30px;
+  padding-right: 13px;
   color: grey;
 }
 .bloc2__btn .bloc2__btn__1 .number {
@@ -349,11 +349,14 @@ h3 {
   font-size: 17px;
   margin: 0;
   padding: 15px 0 0 15px;
+  flex-wrap: nowrap;
+  width: 450px;
 }
 .menu .menu__middle p {
   padding: 5px 0 12px 15px;
   margin: 0;
   font-size: 14px;
+  flex-wrap: nowrap;
 }
 .menu .menu__middle strong {
   padding: 8px 20px 0 0;
@@ -385,6 +388,11 @@ h3 {
   flex-direction: column;
   align-items: center;
   gap: 13px;
+}
+
+.cloche {
+  background-color: #99E2D0;
+  width: 50px;
 }
 
 header {
@@ -527,6 +535,33 @@ footer i {
 
 .l5 {
   animation-delay: 1000ms;
+}
+
+.menu__name.one {
+  animation: slide-in-bottom 1s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+}
+
+.menu__name.two {
+  animation: slide-in-bottom 1s 250ms cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+}
+
+.menu__name.three {
+  animation: slide-in-bottom 1s 500ms cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+}
+
+.menu__name.four {
+  animation: slide-in-bottom 1s 750ms cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+}
+
+@keyframes slide-in-bottom {
+  0% {
+    transform: translateY(30px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
