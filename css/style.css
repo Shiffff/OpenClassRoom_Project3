@@ -38,7 +38,6 @@ a:visited {
   border: none;
 }
 .allbtn__btn1:hover {
-  scale: 0.1;
   cursor: pointer;
   transform: scale(1.03);
   transition: transform 100ms;
@@ -437,6 +436,7 @@ header i {
   left: 25px;
   top: 24px;
   cursor: pointer;
+  color: black;
 }
 
 .pctup img {
